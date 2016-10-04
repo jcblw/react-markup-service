@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const path = require('path');
+const yargs = require('yargs').argv;
+const setupHooks = require('../src/hooks');
+const { createServer } = require('../src/server');
+
+const hooksPath = path.resolve(process.cwd(), yargs.hooks || './hooks');
+const hooks = setupHooks(hooksPath);
+
+hooks.beforeServiceStarts((options) => {
+  const opts = Object.assign({}, hooks, options || {});
+  const service = createServer(opts.port || 5000, opts, () => {
+    hooks.afterServiceHasStarted(service);
+  });
+});
