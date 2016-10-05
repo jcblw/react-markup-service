@@ -1,5 +1,7 @@
 # React markup service
 
+[![CircleCI](https://circleci.com/gh/RadPad/react-markup-service/tree/master.svg?style=svg)](https://circleci.com/gh/RadPad/react-markup-service/tree/master)
+
 > Currently only supports node 6+
 
 *React markup service* is a executable that will run an api to request markup for react components.
