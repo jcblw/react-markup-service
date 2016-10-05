@@ -1,6 +1,6 @@
 # React markup service
 
-[![CircleCI](https://circleci.com/gh/RadPad/react-markup-service/tree/master.svg?style=svg)](https://circleci.com/gh/RadPad/react-markup-service/tree/master)
+[![CircleCI](https://img.shields.io/circleci/project/RadPad/react-markup-service/master.svg)](https://circleci.com/gh/RadPad/react-markup-service/tree/master)
 
 > Currently only supports node 6+
 
