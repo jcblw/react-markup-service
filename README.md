@@ -54,6 +54,16 @@ const options = {};
 ...
 ```
 
+*options*
+
+| option key  | description                                                                                                                             | type   | defaults         |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------------------|--------|------------------|
+| port        | the port that the service will listen on                                                                                                | number | 5000             |
+| server      | a server object, currently this is expecting a express server with middleware capabilities.                                             | object | express()        |
+| apiBase     | the base for the api to be set at, eg. `/api/` would put the render endpoint at `/api/render`                                           | string | ''               |
+| router      | a router object, currently this is a express.Router object wanted                                                                       | object | express.Router() |
+| compiledDir | the path to the root of the compiled javascript, this will allow you to shorten your paths to components when making a post to the api. | string | './compiled'     |
+
 ##### afterServiceHasStarted
 
 `afterServiceHasStarted` hook is a way you could signal other apps to let them know the service is ready to use.
