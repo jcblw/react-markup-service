@@ -90,6 +90,20 @@ const options = {};
 ...
 ```
 
+#### Api Interface
+
+the api consist of mainly on endpoint `/render`, render is a `POST` endpoint, and wants a json object as the post body. The post body is the `props` of the request. You also need to set a `component` key in the body.
+
+```shell
+curl -X POST -d '{"component": "./foo-component.js"}' http://localhost:5000/render
+```
+
+There is also an alive router, may be tmp, to check if the service is alive.
+
+```shell
+curl http://localhost:5000/alive
+```
+
 ### Contributing
 
 We use eslint please follow it. and plz run `npm test`!
