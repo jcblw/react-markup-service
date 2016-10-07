@@ -6,17 +6,21 @@
 
 *React markup service* is a executable that will run an api to request markup for react components.
 
+Server side rendering React components sometimes can be tricky when your backend architecture is something other than NodeJS. Luckily there is a few solutions for this, like [react-stdio](https://github.com/mjackson/react-stdio), but sometimes this can be slow as well. Spawning external processes and starting up a node process can be a bottle neck. This instead of spawning an external process each time we need new markup we just starts up a server that serves an api for the markup. `react-markup-service` allows you to do this as close or far away from the application as you like.
+
+#### Examples
+
+- from a python app (coming soon)
+- as a standalone app (coming soon)
+
 ### Install
 
 ```shell
 npm install react-markup-service
 ```
-
-### Setup
+### Running
 
 The service needs to run in the root of your project. The project can be any structure, it just needs to have react components somewhere in the file directory.
-
-### Running
 
 Installing the package gives you access to the `react-markup-service` executable. The only option currently is `--hooks` which points towards your hooks file.
 
