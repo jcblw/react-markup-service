@@ -10,7 +10,7 @@ Server side rendering React components sometimes can be tricky when your backend
 
 #### Examples
 
-- from a python app (coming soon)
+- [a python app using react-component-service](https://github.com/jcblw/python-react-markup-service-example)
 - as a standalone app (coming soon)
 
 ### Install
