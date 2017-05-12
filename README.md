@@ -1,5 +1,7 @@
 # React markup service
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jcblw/react-markup-service.svg)](https://greenkeeper.io/)
+
 [![CircleCI](https://img.shields.io/circleci/project/RadPad/react-markup-service/master.svg)](https://circleci.com/gh/RadPad/react-markup-service/tree/master)
 
 > Currently only supports node 6+
